@@ -47,25 +47,13 @@
                 </div>
                 <!--Separei os ícones e alterei a class por causa da responsividade-->
                 <!--Atualizei os ícones do cabeçalho nomeando cada um deles-->
-
             </div>
         </div>
 
         <br>
-        <div class="container text-center">
-            <div class="row justify-content-md-center">
-                <div class="col-1"></div>
-                <div class="col-10">
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Pesquisa..." aria-label="Search">
-                        <button class="btn btn-outline-danger" type="submit">PESQUISAR</button>
-                    </form>
-                </div>
-                <div class="col-1"></div>
-            </div>
-        </div>
-        <br>
+        
     </header>
+
     <!--Atualizei e ajustei o menu-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -126,46 +114,76 @@
     </nav>
     <br>
 
+<!--Fiz essa outra opção de menu porque a outra não ficou responsiva, tentei modificar para que ficasse, mas não consegui-->
+<!--Essa opção de menu não consegui ainda colocar a pesquisa na lateral, estou tentando-->
+    <div class="container-fluid">
+        <nav class="navbar bg-body-tertiary">
+            <form class="container-fluid justify-content-md-center">
+                <button class="btn btn-outline-primary me-4" type="button">HOME</button>
+                <button class="btn btn-outline-primary me-4" type="button">GAMES</button>
+                <button class="btn btn-outline-primary me-4" type="button">MONTE SEU PC</button>
+                <button class="btn btn-outline-primary me-4" type="button">HARDWARE</button>
+                <button class="btn btn-outline-primary me-4" type="button">PERIFÉRICOS</button>
+                <button class="btn btn-outline-primary me-4" type="button">SMARTPHONES</button>
+                <button class="btn btn-outline-primary me-4" type="button">WORK</button>
+                <button class="btn btn-outline-primary me-4" type="button">LOGIN</button>
+            </form>
 
-    <div class="slider">
-        <div class="slides">
-            <!--Radio Buttons-->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            <!--Fim Radio Buttons-->
-
-            <!--Slides images-->
-            <div class="slide first">
-                <img src="Img/image1.jpg" alt="imagem1" />
+        </nav>
+    </div>
+    <br>
+    <div class="container text-center">
+        <div class="row justify-content-md-center">
+            <div class="col-1"></div>
+            <div class="col-10">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Pesquisa..." aria-label="Search">
+                    <button class="btn btn-outline-danger" type="submit">PESQUISAR</button>
+                </form>
             </div>
-            <div class="slide">
-                <img src="Img/image2.jpg" alt="imagem2" />
-            </div>
-            <div class="slide">
-                <img src="Img/image3.jpg" alt="imagem3" />
-            </div>
-            <div class="slide">
-                <img src="Img/image4.jpg" alt="imagem4" />
-            </div>
-            <!--Fim Slides images-->
-            <!--Navigation auto-->
-            <div class="navigation-auto">
-                <div class="auto-btn1"></div>
-                <div class="auto-btn2"></div>
-                <div class="auto-btn3"></div>
-                <div class="auto-btn4"></div>
-                <!--Fim Navigation auto-->
-            </div>
-        </div>
-        <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <label for="radio2" class="manual-btn"></label>
-            <label for="radio3" class="manual-btn"></label>
-            <label for="radio4" class="manual-btn"></label>
+            <div class="col-1"></div>
         </div>
     </div>
+    <br>
+
+
+    <!--Estou tentando fazer o carrossel mas ainda não ficou tão legal, tive que modificar o tamanho das imagens para ficar menos pior, 
+    não achei tão simples ou talvez não esteja sabendo fazer. Assisti alguns vídeos no youtube que ajudaram um pouco-->
+    <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" style="height: 30em;">
+                <div class="carousel-item active">
+                    <img src="Img/carousel1.png" class="d-block w-100" alt="BannerCarousel1">
+                </div>
+                <div class="carousel-item">
+                    <img src="Img/carousel2.png" class="d-block w-100" alt="BannerCarousel2">
+                </div>
+                <div class="carousel-item">
+                    <img src="Img/carousel3.png" class="d-block w-100" alt="BannerCarousel3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <br>
 
     <!--Atualização dos banners com o bootstrap e reposicionamento dos mesmos-->
     <div class="container-fluid">
@@ -210,7 +228,7 @@
     </div>
 
     <br>
-<!--Atualizei o banner de montagem de pc e coloquei as ofertas entre ele e os outros banners-->
+    <!--Atualizei o banner de montagem de pc e coloquei as ofertas entre ele e os outros banners-->
     <div class="container-fluid">
         <div class="row justify-content-md-center">
             <div class="col-1"></div>
